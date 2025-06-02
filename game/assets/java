@@ -1,0 +1,24 @@
+package ;
+import java.util.*;
+public class prime
+{
+  public static void main(string args[])
+  {
+    int i,n,flag=0;
+    system.out.println("enter a number");
+    Scanner inp= new Scanner(system.in);
+    n = inp.nextInt();
+    for(i=2;i<n;i++)
+    {
+      if(n%i==0)
+      {
+        flag=1;
+        break;
+      }
+    }
+    if (flag==1)
+    system.out.println("not prime");
+    else
+    system.out.println("prime");
+}
+}
